@@ -88,7 +88,7 @@ a passphrase and other information, the passphrase will be provided in the extra
 <li>Go back to your local machine and run <b>cat ~/.ssh/grader_key.pub</b> Copy the code
 and go back to your virtual machine and enter it in <b>.ssh/authorized_keys</b></li>
 <li>Change the owner permissions using <b>chmod 700 .ssh</b> and <b>chmod 644 .ssh/authorized_keys</b></li>
-<li>You can now log in as a grader using: <b>ssh -i ~/.ssh/grader_key -o 2200 grader@xx.xxx.xxx.xx</b></li>
+<li>You can now log in as a grader using: <b>ssh -i ~/.ssh/grader_key -p 2200 grader@xx.xxx.xxx.xx</b></li>
 </ol>
 
 <h2>Install Fail2ban</h2>
