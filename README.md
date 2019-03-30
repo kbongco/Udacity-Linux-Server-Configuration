@@ -223,6 +223,18 @@ and enter the following lines of code: <br>
 <li>If there are errors check out the apache error log with <b>sudo tail /var/log/apache2/error.log</b></li>
 </ol>
 
+<h2>Edits made to meet specifications</h2>
+This edit was done to meet the specification to not allow root login remotely. 
+<ol>
+    <li>While logged in as grader, use the command <b>sudo nano /etc/sshd/sshd_config</b> and enter 
+        the password to login.</li>
+    <li>Search for the line <b>PermitRootLogin</b>. Right now it states PermitRootLogin prohibit-password.
+    Change that line to <b>no</b> and exit the config</li>
+    <li>Check and verify using the command <b>cat /etc/sshd_sshd_config | grep PermitRootLogin</b> and you will 
+    see that the changes are applied.</li>
+ 
+</ol>
+
 <h3>Sources, Various Links that helped with this project!</h3>
 <ul>
 <li>Various Github Repositories</li>
@@ -238,3 +250,6 @@ and enter the following lines of code: <br>
 <li><a href="https://mudspringhiker.github.io/deploying-a-flask-web-app-on-lightsail-aws.html">How I deployed a flask app using Lightsail on AWS</a></li>
 <li><a href="https://www.jakowicz.com/flask-apache-wsgi/">Running a Flask application under the Apache WSGI module</a></li>
 <li><a href="https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys">SSH Essentials Working with SSH servers, clients and keys</a></li>
+<li><a href="http://manpages.ubuntu.com/manpages/xenial/en/man5/sshd_config.5.html">sshd_config documentation</a></li>
+<li>Udacity Reviewer's Comments (2nd submission)</li>    
+</ul>
