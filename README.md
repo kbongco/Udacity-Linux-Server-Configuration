@@ -8,7 +8,7 @@ web application.
 <h2>Some important information</h2>
 IP Address: 18.234.199.216<br>
 Accessible SSH port: 200<br>
-Visit: <a href="http://18.234.199.216">http://18.234.199.216</a> To see it deployed!
+<s>Visit: <a href="http://18.234.199.216">http://18.234.199.216</a> To see it deployed!</s> No longer deployed and running!
 
 <h2>Tools Used</h2>
 <ul>
